@@ -21,7 +21,7 @@ function postToGoogle() {
           document.getElementById("message").focus();
           return false;
         }
-        $.ajax({
+        $.ajax({ //url of dayonhorizon since couldn't find new ids
                     url: "https://docs.google.com/forms/d/e/1FAIpQLSc3SuQnHKpUqyme1qmu-NLFXkHLgOL6vMo-vFKcRigIFvKcOg/formResponse?",
           data: {"entry.1309152733": name, "entry.1267741741": email, "entry.381574307": message},
                // $.ajax({
