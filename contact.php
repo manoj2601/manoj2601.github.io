@@ -1,6 +1,6 @@
 <?php
 $errors = '';
-$mymail = 'mkumariitdelhi@gmail.com';
+$mymail = 'cs5180411@iitd.ac.in';
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -25,3 +25,4 @@ if(empty($errors))
 	mail($mymail, $subject, $body, $headers);
 }
 ?>
+
