@@ -255,21 +255,21 @@
         </div>
         <div class="row no-gutters block-9">
           <div class="col-md-6 order-md-last d-flex">
-          	<!-- <?php include 'contact.php';?> -->
-            <form action="contact.php" method="POST">
+            <form id="myForm" action="" target="_self" onsubmit="return postToGoogle();" autocomplete="off">
               <div class="form-group">
-                <input type="text" style="width:500px;" class="form-control" placeholder="Your Name">
+                <input id="name" type="text" style="width:500px;" class="form-control" placeholder="Your Name">
               </div>
               <div class="form-group">
-                <input type="text" style="width:500px;" class="form-control" placeholder="Your Email">
+                <input id="email" type="text" style="width:500px;" class="form-control" placeholder="Your Email">
               </div>
               <div class="form-group">
-                <textarea style="width:500px;" name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea style="width:500px;" name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                <button id="send" type="submit" value="" class="btn btn-primary py-3 px-5">Send Messag </button>
               </div>
             </form>
+            <script src="contact.js"></script>
           </div>
 
           <div class="col-md-6 d-flex">
